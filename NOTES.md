@@ -17,7 +17,26 @@
 - Pastor's cell: 078 884 7002 (tel: links — CTA "Call the church" + footer).
 - Church email: waonepelesi@jesusthetruelight.org (footer mailto:).
 
-## Not yet done
-- No Lovable screenshots supplied yet for this rebuild — vision/about copy, "what to expect" wording, and
-  ministries list are still the template defaults. Swap in the church's real wording once screenshots arrive.
-- Logo not yet supplied — site currently uses text wordmark only ("The True Light").
+## Phase 2 refine (2026-07-20) — real content carried over from Lovable
+Source: https://jesusthetruelightofeverynation.lovable.app (screenshots + live HTML fetch — the SSR
+markup exposed real asset URLs, so the church's actual logo and photos were downloaded directly rather
+than re-generated). Originals kept unmodified in `assets/img/original/`; in-use copies are
+`logo.jpg` (nav/footer/hero emblem), `hero.jpg` (hero bg), `mission-bg.jpg` (Mission section bg,
+worship hands), `scripture-bg.jpg` (Scripture section bg, open Bible in window light).
+
+- Vision and Mission sections added (new), using the pastor's FULL text as given to WDF — not the
+  shortened paraphrase that was live on the Lovable site. "Breaking the walls of divisions" (pastor's
+  own plural wording) is now its own heading.
+- Ministries section replaced with their real four pillars: Word & Worship, Children & Youth,
+  Empowerment, Community Care (exact names + descriptions from the original site).
+- Scripture section (pinned/signature moment) now quotes the KJV wording the church actually uses
+  ("for thy light is come... is risen upon thee") with their "Rev. 22 · Isaiah 60:1–22" citation,
+  instead of the modern-paraphrase placeholder. Hero headline keeps the modern phrasing
+  ("Arise, shine, / your light has come.") as directed.
+- Old site's WRONG service times (Sunday 9:00, Wednesday 6:30pm) and placeholder email
+  (hello@truelightgospel.org) were not carried over — WDF's real data (Tue/Fri 17:30, Sun 10:00;
+  waonepelesi@jesusthetruelight.org) stayed in place from the v1 build.
+- Ember particle palette swapped one fire tone for sky-blue, so the rising-particle motion reads as
+  light rather than fire, matching this church's actual gold/black/sky identity (not a "fire" church).
+- Logo now appears live: nav (small circle), footer (small circle), and a slowly-turning emblem in the
+  hero (soft radial mask dissolves its white card background into the dark hero, right side, lg+ only).
