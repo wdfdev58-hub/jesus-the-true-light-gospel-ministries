@@ -1,6 +1,6 @@
-/* Revival Fire Ministry — motion & the living ember field.
-   Signature element: canvas embers rising through the Kalahari night,
-   with a GSAP-orchestrated hero and scroll-triggered reveals. */
+/* Jesus-The True Light Gospel Ministries — motion & the rising light field.
+   Signature moment: the pinned Isaiah 60:1 scripture section, with a
+   GSAP-orchestrated hero and scroll-triggered reveals throughout. */
 
 (() => {
   'use strict';
@@ -38,7 +38,7 @@
       this.embers = Array.from({ length: this.count }, () => this.spawn(true));
     }
     spawn(initial = false) {
-      const palette = ['#E0A428', '#F2D06B', '#A9781A', '#FCE3A0'];
+      const palette = ['#E0A428', '#F2D06B', '#7EC8E8', '#FCE3A0'];
       return {
         x: Math.random() * this.w,
         y: initial ? Math.random() * this.h : this.h + 10,
@@ -146,7 +146,7 @@
     });
   });
 
-  // Pinned scripture: hold, drift the embers, gently scale the verse
+  // Pinned scripture: hold, drift the embers, gently scale the verse — the signature "Arise, shine" moment
   ScrollTrigger.create({
     trigger: '#scripture',
     start: 'top top',
@@ -161,6 +161,10 @@
   gsap.to('#verseTag', {
     letterSpacing: '0.6em', ease: 'none',
     scrollTrigger: { trigger: '#scripture', start: 'top bottom', end: 'top top', scrub: true },
+  });
+  gsap.to('#scriptureBg', {
+    yPercent: 8, scale: 1, ease: 'none',
+    scrollTrigger: { trigger: '#scripture', start: 'top bottom', end: 'bottom top', scrub: true },
   });
 
   // Subtle parallax on the two big gradient statements

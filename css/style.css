@@ -39,6 +39,15 @@ body { overflow-x: hidden; }
 .ember-dot { box-shadow: 0 0 14px 2px rgba(224,164,40,0.8); animation: pulse 2.4s ease-in-out infinite; }
 @keyframes pulse { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: .55; transform: scale(1.35); } }
 
+/* ---- hero emblem: the church's own logo, slowly turning ---- */
+/* soft radial mask dissolves the logo's white card background into the dark hero */
+.emblem-spin {
+  animation: spin 60s linear infinite;
+  -webkit-mask-image: radial-gradient(circle at center, black 46%, transparent 74%);
+  mask-image: radial-gradient(circle at center, black 46%, transparent 74%);
+}
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
 /* ---- buttons ---- */
 .cta, .cta-sm {
   display: inline-flex; align-items: center; gap: .5rem;
@@ -119,6 +128,6 @@ body { overflow-x: hidden; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .reveal, .hero-title .line { opacity: 1 !important; transform: none !important; }
-  .ember-dot, .scroll-cue, .intro-spark { animation: none !important; }
+  .ember-dot, .scroll-cue, .intro-spark, .emblem-spin { animation: none !important; }
   #intro { display: none; }
 }

@@ -1,0 +1,11 @@
+Jesus-The True Light Gospel Ministries — image credits
+
+Church's own assets (carried across from their original site, jesusthetruelightofeverynation.lovable.app):
+  logo.jpg           — the church's own emblem (globe, ribbon, open Bible)
+  hero.jpg            — their hero background (dawn light breaking through cloud)
+  mission-bg.jpg       — their mission-section background (worship, hands raised)
+  scripture-bg.jpg     — their scripture-section background (open Bible, window light)
+  originals also kept unmodified in assets/img/original/
+
+Pexels stock (no attribution required under the Pexels licence, record kept for reference):
+  welcome.jpg, moment-1.jpg, moment-2.jpg, moment-3.jpg, visit.jpg
